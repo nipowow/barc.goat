@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>BARC-CO - Perfil</title>
+</head>
+<body>
+      <header>
+    {% include 'header.html' %}
+  </header>
+  <section class="sectionlogin">
+    <h1 id="h1profile1">Bienvenido {{ current_user.username }}, seleccioná la opción deseada: </h1>
+
+    <div class="parent">
+    <div id="div1">
+      <div class="contenido">
+        <h2>Gestión de Usuarios </h2>
+        <p class="pcontenido">Adminstrá las credenciasles de los distintos empleados</p>
+        <a href="" class="linksadmin">Gestionar ➔</a>
+      </div>
+    </div>
+    <div id="div2">
+      <div class="contenido">
+          <h2>Lista de Usuarios </h2>
+          <p class="pcontenido">Consultá la información de los usuarios registrados en el sistema</p>
+          <a href="" class="linksadmin">Ver usuarios ➔</a>
+      </div>
+    </div>
+    <div id="div3">
+      <div class="contenido">
+        <h2>Registro de Envíos </h2>
+        <p class="pcontenido">Revisá el estado y los detalles de los envíos</p>
+        <a href="" class="linksadmin">Ver envíos ➔</a>
+      </div>
+    </div>
+    <div id="div4">
+      <div class="contenido">
+          <h2>Registro de Barcos </h2>
+          <p class="pcontenido">Accedé al registro completo de barcos</p>
+          <a href="" class="linksadmin">Ver barcos ➔</a>
+      </div>
+    </div>
+</div>
+
+
+
+
+  </section>
+
+  
+
+    
+
+  
+    
+</body>
+</html>

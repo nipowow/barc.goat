@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Programa BARC-CO</title>
+  </head>
+  <body>
+      <header>
+          {% include 'header.html' %}
+      </header>
+    <main>
+      <!--
+     <nav>
+        <div class="logo"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo"></div>
+        <ul id="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="{{ url_for('auth.login_get') }}">Login</a></li>
+          <li><a href="{{ url_for('main.form') }}">Registrarse</a></li>
+          
+          <li><a href="{{ url_for('main.profile', id=10) }}">Profile</a></li>
+          <li><a href="/logout">Desloguearse</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    -->
+      
+  <!-- tu barra de navegación -->
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Gestión <span class="span">Inteligente</span> de Puertos Marítimos</h1>
+    <p>Control, trazabilidad y eficiencia en cada embarque.</p>
+    <div class="buttons">
+      <button class="btningresar">Ingresar al sistema</button>
+      <a href="#servicios" class="btn_servicios">Ver servicios</a>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+    <h1 id="h1servicios">Nuestros Servicios</h1>
+    <section class="servicio">
+      <div class="imagen">
+        <img src="../static/img/foto2index.jpg" alt="Imagen 1"  width="250" height="300">
+      </div>
+      <div class="descripcion">
+        <h2>Serivio 1</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptatibus inventore quibusdam ipsa expedita doloribus est corporis excepturi eum tenetur?</p>
+      </div>
+    </section>
+
+    <section class="servicio">
+      <div class="descripcion">
+        <h2>Servicio 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi iusto optio ea recusandae modi, neque perferendis itaque ipsum? Non?</p>
+      </div>
+            <div class="imagen">
+        <img src="../static/img/foto2index.jpg" alt="Imagen 1"  width="250" height="300">
+      </div>
+    </section>
+
+    <section class="servicio">
+      <div class="imagen">
+        <img src="../static/img/foto2index.jpg" alt="Imagen 1"  width="250" height="300">
+      </div>
+      <div class="descripcion">
+        <h2>Servicio 3</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet eius fugit animi tenetur quibusdam fugiat illo, tempore sapiente sed!</p>
+      </div>
+    </section>
+
+
+
+  </section>
+  
+    </main>
+
+    <footer></footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

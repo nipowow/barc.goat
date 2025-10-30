@@ -1,0 +1,24 @@
+<nav>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo">
+    </div>
+
+    <ul id="menu">
+        <li><a href="{{ url_for('main.index') }}">Home</a></li>
+        <li><a href="{{ url_for('main.index') }}">About us</a></li>
+
+        {% if current_user.is_authenticated %}
+            <li><a href="{{ url_for('main.profile') }}">Perfil ({{ current_user.username }})</a></li>
+            <li><a href="{{ url_for('auth.logout') }}">Cerrar sesión</a></li>
+        {% else %}
+        <li><a href="{{ url_for('auth.login_get') }}">Login</a></li>
+            <li><a href="{{ url_for('main.form') }}">Registrarse</a></li>
+        {% endif %}
+    </ul>
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
