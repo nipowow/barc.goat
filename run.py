@@ -1,5 +1,5 @@
 from app import create_app
-import werkzeug_patch
+
 
 # ACA SE INICIA LA APP 
 app = create_app()
